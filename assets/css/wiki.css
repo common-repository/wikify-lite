@@ -1,0 +1,565 @@
+/******************* 
+	GENERAL
+*******************/
+p.label {
+	padding:0;
+    color: #111;
+    width: 100%;
+	margin-top: 1em;    
+	margin-bottom: 0.3em;    
+    text-align: left;
+}
+
+.text-left{
+	text-align:left;
+}
+
+.text-center{
+	text-align:center;
+}
+
+.text-right{
+	text-align:right;
+}
+
+.submitButtonRow {
+    clear: both;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.col-md-2 .leftBar {
+	padding-left:26px;
+	padding-top:5px;
+}
+
+.wikifyPostFormRow {
+	width:100%;
+}
+
+.wikifyPostFormColumn {
+	width:auto;
+	float:left;
+	margin-right:10px;
+}
+
+.wikify-submit-row {
+	margin-top:15px;
+}
+
+.resultsFound {
+	font-size:13px;
+}
+
+
+/******************* 
+	ALERTS
+*******************/
+.wikify-alert {
+	padding:10px;
+	border:1px solid #eee;
+	font-weight:bold;
+	line-height:120%;
+}
+
+/******************* 
+	BREADCRUMBS
+*******************/
+#breadcrumbs {
+	padding:10px 20px; 
+	margin-bottom:5px;
+	border-bottom:1px solid #ddd;
+}
+
+#wikiBar .separator {
+    font-size: 12px;
+    font-weight: 400;
+    color: #444;  
+}
+
+/******************* 
+	COMMENTS
+*******************/
+#wikifyCommentsList {
+	margin:0;
+}
+
+.commentSideBar {
+	float:left;
+	position:relative;
+	width:14%;
+	padding-left:15px;
+}
+
+.commentSideBar .avatar, .leftBar .avatar {
+	padding:5px;
+	border:1px solid #ddd;
+}
+
+.commentSideBar img.avatar, .leftBar img.avatar {
+	width:60px;
+	height:auto;
+}
+
+.commentMainArea {
+	float:left;
+	position:relative;
+	width:86%;
+	margin-bottom:20px;	
+}
+
+#commentFormRow {
+	margin:auto;
+	padding: 1em 0;	
+}
+
+/******************* 
+	POST/EDIT
+*******************/
+
+#fep-new-post .acf_postbox input[type="text"]  {
+	border: 1px solid #999;
+}
+
+textarea.note-codable {
+	width:100%;
+	height:100% !important;
+}
+
+
+.note-editor .btn-group-sm > .btn, .note-editor .btn-sm {
+	font-size:0.7em;
+}
+
+#fep-new-post #fep-post-title {
+	font-size:22px;
+}
+
+#fep-new-post #fep-post-subtitle, #fep-new-post #fep-post-excerpt, #fep-new-post #fep-post-tags {
+	font-size:18px;			
+}
+
+#fep-new-post input[type="text"] {
+	padding:0 10px;
+	border:1px solid #fff; /*The border is a white/invisible placeholder so it won't shift the layout upon hover.*/
+}
+
+#fep-new-post input[type="text"]:hover {
+	border:1px solid #ccc;
+}			
+
+#fep-new-post textarea {
+	padding:10px;			
+	font-size:16px;			
+}
+
+#fep-new-post input[type="text"], #fep-new-post textarea {
+	width:100%;
+	color:#333;
+}
+
+#fep-new-post label {
+	font-weight:bold;
+	font-size:16px;
+	margin-bottom: 0.3rem;				
+	display:block;
+}
+
+#fep-new-post #fep-post-title {
+	font-weight:bold;
+}
+
+/******************* 
+	HISTORY
+*******************/
+
+#historyWrapper {
+	margin-top:10px;
+}
+
+#revisionTableHeader, .historyItem {
+	padding:3px 15px;
+}
+
+#revisionTableHeader, .historyItem{
+	position: relative;
+	display:block;
+}
+
+.historyItem{
+	font-size: 15px;
+}
+
+.wikifyHistoryNote, .wikifyHistoryItemNote,
+.wikifyHistoryDate, .wikifyHistoryItemDate,
+.wikifyHistoryAuthor, .wikifyHistoryItemAuthor,
+.wikifyHistoryOld, .wikifyHistoryItemOld,
+.wikifyHistoryNew, .wikifyHistoryItemNew {
+	position:relative;
+	display: inline-block;
+}
+
+.wikifyHistoryNote, .wikifyHistoryItemNote {
+	width:42%;
+}
+
+.wikifyHistoryDate, .wikifyHistoryItemDate {
+	width: 26%;
+}
+
+.wikifyHistoryAuthor, .wikifyHistoryItemAuthor {
+	width: 19%;
+}
+
+.wikifyHistoryOld, .wikifyHistoryItemOld, .wikifyHistoryNew, .wikifyHistoryItemNew  {
+	text-align:center;
+	width: 5%;
+}
+
+.wikifyHistoryRowSubmit {
+	margin-top:15px;
+}
+
+@media only screen and (max-width: 650px) {
+	.wikifyHistoryNote, .wikifyHistoryDate, .wikifyHistoryAuthor {
+		display:none;
+	}
+	
+	.wikifyHistoryItemNote {
+		width:100%;
+		display:block;
+	}
+	
+	.wikifyHistoryItemDate, .wikifyHistoryItemAuthor  {
+		width:auto;
+		display:inline;
+	}			
+}
+
+.wikify-restore-link{
+	display:none;
+	float:right;
+	font-size:12px;
+	margin-right:5px;
+	margin-left:5px;	
+}
+
+#revisionWrapper {
+	margin:auto;
+	max-width:900px; 
+	width:100%;
+	padding:20px 30px;
+}
+
+#historyWrapper {
+	margin:auto;
+	max-width:900px; 
+	width:100%;
+	border:1px solid #0275d8;
+	list-style:none;
+	padding:0;
+}
+
+#historyWrapper a .noNote {
+	color:#999;
+}
+
+#historyWrapper .historyItem:not(#revisionTableHeader):hover {
+	background:#f2f2f2;
+}
+
+#historyWrapper .historyItem:not(#revisionTableHeader):hover .wikify-restore-link {
+	display:inline;
+}
+
+#revisionTableHeader {
+	font-weight:bold;
+	color: #fff;
+	background: #0275d8;
+}
+
+
+
+/******************* 
+	TABS
+*******************/
+ul.wikify-tabs {
+	margin: 1.8em 0 -2px 0;
+	overflow: hidden;
+	padding:0;
+}
+
+ul.wikify-tabs li {
+	display: inline-block;
+	margin: 0 4px 0 0;
+	font-size:13px;
+}
+
+ul.wikify-tabs li a {
+	display: block;
+	color: #555;
+	font-weight: 700;
+	padding: 7px 15px;
+	border-bottom: 0 none;
+	text-decoration: none;
+	outline: none;
+}
+
+ul.wikify-tabs li a:hover {
+	color: #888;
+}
+
+ul.wikify-tabs li.current-wikify-tab a {
+	border: #ccc solid 1px;
+	background: #fff;
+	padding-bottom: 12px;
+	margin-bottom: -2px;
+}
+
+ul.wikify-tabs li.current-wikify-tab a:hover {
+	color: #555; /*this counteracts the tab color hover*/
+}
+
+.wikify-tabs-rule {
+	border-top: 1px solid #ccc;
+	margin: 0 0 15px 0;
+}
+
+/* Custom Dropdown Menus */
+
+ul#wikiTabs li a, .dropbtn {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+}
+
+ul#wikiTabs .menu-item-has-children li {
+	display:block;
+	width: 100%;
+	line-height: 110%;	
+}
+
+ul#wikiTabs li.menu-item-has-children {
+    display: inline-block;
+}
+
+ul#wikiTabs ul.sub-menu {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	padding: 0;
+	margin-left: -7em;
+	width: 9.5em;
+	float: left;
+	font-size: 12px;
+}
+
+
+ul#wikiTabs .sub-menu a {
+	width:100%;
+    color: black;
+    padding: 7px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+ul#wikiTabs .sub-menu a:hover {background-color: #f1f1f1;}
+
+ul#wikiTabs .menu-item-has-children:hover .sub-menu {
+    display: block;
+}
+
+
+/* COMMENTS */
+#commentsWrapper {
+	margin:auto; max-width:1000px; width:100%;
+}
+
+#commentsWrapper textarea {
+	width:100%;
+	padding:10px 15px;
+	font-size:16px;
+}
+
+.commentMainArea { padding:0px 20px; }
+.commentItem { width:100%; margin-bottom:0; padding:5px 10px10px; display:inline-block; } 
+.commentSideBar { padding-top: 5px; } 
+.commentContent { margin-top:5px; font-size:16px; } 
+.commentTime { font-size:12px; } 
+.commentAuthor { font-size:12px; font-weight:bold; color: #444; } 
+#wikifyCommentsList li { list-style:none; margin-left:0; }
+
+
+
+/*******************
+	WIDGET:
+	CONTRIBUTORS
+*******************/
+
+.wikifyContributorsWidget {
+	list-style: none;
+}
+
+.wikifyContributorsWidget li {
+	margin-bottom:5px;
+}
+.wikifyContributorsWidget .avatar {
+	margin-right:7px;
+}
+
+
+/*******************
+	PHP-DIFF
+*******************/
+
+.Differences {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+}
+
+.Differences thead th {
+	text-align: left;
+	border-bottom: 1px solid #000;
+	background: #eee;
+	color: #000;
+	padding: 4px;
+}
+.Differences tbody th {
+	text-align: right;
+	background: #f2f2f2;
+	width: 4em;
+	padding: 1px 2px;
+	border-right: 1px solid #000;
+	vertical-align: top;
+	font-size: 13px;
+}
+
+.Differences td {
+	padding: 1px 2px;
+	font-family: Consolas, monospace;
+	font-size: 13px;
+}
+
+.DifferencesSideBySide .ChangeInsert td.Left {
+	background: #dfd;
+}
+
+.DifferencesSideBySide .ChangeInsert td.Right {
+	background: #cfc;
+}
+
+.DifferencesSideBySide .ChangeDelete td.Left {
+	background: #f88;
+}
+
+.DifferencesSideBySide .ChangeDelete td.Right {
+	background: #faa;
+}
+
+.DifferencesSideBySide .ChangeReplace .Left {
+	background: #fe9;
+}
+
+.DifferencesSideBySide .ChangeReplace .Right {
+	background: #fd8;
+}
+
+.Differences ins, .Differences del {
+	text-decoration: none;
+}
+
+.DifferencesSideBySide .ChangeReplace ins, .DifferencesSideBySide .ChangeReplace del {
+	background: #fc0;
+}
+
+.Differences .Skipped {
+	background: #f7f7f7;
+}
+
+.DifferencesInline .ChangeReplace .Left,
+.DifferencesInline .ChangeDelete .Left {
+	background: #fdd;
+}
+
+.DifferencesInline .ChangeReplace .Right,
+.DifferencesInline .ChangeInsert .Right {
+	background: #dfd;
+}
+
+.DifferencesInline .ChangeReplace ins {
+	background: #9e9;
+}
+
+.DifferencesInline .ChangeReplace del {
+	background: #e99;
+}
+
+
+.pendingWrapper {
+	border:1px solid #eee;
+}
+
+.pendingTableHeader {
+	height:auto;
+	clear:both;
+	font-size:14px;
+	padding:5px 15px;
+	background:#eee;
+	font-weight:bold;
+}
+
+.publishedPostItem {
+	height:auto;
+	clear:both;
+	font-size:14px;
+	padding:5px 15px;
+	background:#f8f8f8;
+}
+
+.pendingRowItem {
+	height:auto;
+	clear:both;
+	font-size:14px;
+	padding:5px 15px;
+	border-bottom:1px #ccc dotted;
+}
+
+.pendingWrapper .diffButton {
+	display:inline-block;
+	width:5%;
+	text-align:center;
+}
+
+.pendingWrapper .metaData {
+	display:inline-block;
+	width:20%;
+}
+
+.pendingWrapper .revisionNote {
+	display:inline-block;
+	width:45%;
+}
+
+.pendingWrapper .author {
+	display:inline-block;
+	width:15%;
+}
+
+.pendingWrapper .approve {
+	display:inline-block;
+	width:9%;
+}
+
+.pendingRowItem .approve a {
+	visibility:hidden;
+}
+
+.pendingRowItem:hover .approve a {
+	visibility:visible;
+}
